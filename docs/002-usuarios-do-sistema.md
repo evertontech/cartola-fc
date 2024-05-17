@@ -12,3 +12,5 @@ Poderá participar de campeonatos concorrendo a **prêmios** por melhor pontuaç
 ### Administrador
 
 Uma conta que pode entrar e alterar a pontuação dos jogadores da partida.
+
+[Voltar para a página inicial](./readme.md)
