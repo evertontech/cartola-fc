@@ -2,22 +2,22 @@
 
 Requisitos funcionais referem-se as solicitações que o sistema deve atender através de funções.
 
-| Identificador | Descrição Resumida                   | Ator(es)                                    |
-| ------------- | ------------------------------------ | ------------------------------------------- |
-| RF-001        | Fazer cadastro                       | Visitante                                   |
-| RF-002        | Fazer login                          | Visitante                                   |
-| RF-003        | Listar campeonatos                   | Todos                                       |
-| RF-004        | Listar partidas atuais               | Todos                                       |
-| RF-005        | Listar regras                        | Todos                                       |
-| RF-006        | Configurar time                      | Usuário Bronze, Usuário Prata, Usuário Ouro |
-| RF-007        | Assinar o plano Vip                  | Usuário Bronze                              |
-| RF-008        | Assinar o plano Premium              | Usuário Bronze                              |
-| RF-009        | Participar de campeonatos            | Usuário Bronze, Usuário Prata, Usuário Ouro |
-| RF-010        | Fazer logoff                         | Usuário Bronze, Usuário Prata, Usuário Ouro |
-| RF-011        | Alterar dados da conta               | Usuário Bronze, Usuário Prata, Usuário Ouro |
-| RF-012        | Participar de Premiações             | Usuário Prata, Usuário Ouro                 |
-| RF-013        | Escalar até dois times               | Usuário Prata                               |
-| RF-014        | Escalar até cinco times              | Usuário Ouro                                |
-| RF-015        | Participar de campeonatos exclusivos | Usuário Prata, Usuário Ouro                 |
+| Identificador                                  | Descrição Resumida                                                     | Ator(es)                                                                      |
+| ---------------------------------------------- | ---------------------------------------------------------------------- | ----------------------------------------------------------------------------- |
+| <span style="color:cyan"> RF-001 </span>       | <span style="color:greenyellow"> Fazer cadastro </span>                       | <span style="color:gold"> Visitante </span>                                   |
+| <span style="color:cyan"> RF-002 </span> | <span style="color:greenyellow"> Fazer login </span>                          | <span style="color:gold"> Visitante </span>                                   |
+| <span style="color:cyan"> RF-003 </span> | <span style="color:greenyellow"> Listar campeonatos </span>                   | <span style="color:gold"> Todos </span>                                       |
+| <span style="color:cyan"> RF-004 </span> | <span style="color:greenyellow"> Listar partidas atuais </span>               | <span style="color:gold"> Todos </span>                                       |
+| <span style="color:cyan"> RF-005 </span> | <span style="color:greenyellow"> Listar regras </span>                        | <span style="color:gold"> Todos </span>                                       |
+| <span style="color:cyan"> RF-006 </span> | <span style="color:greenyellow"> Configurar time </span>                      | <span style="color:gold"> Usuário Bronze, Usuário Prata, Usuário Ouro </span> |
+| <span style="color:cyan"> RF-007 </span> | <span style="color:greenyellow"> Assinar o plano Vip </span>                  | <span style="color:gold"> Usuário Bronze </span>                              |
+| <span style="color:cyan"> RF-008 </span> | <span style="color:greenyellow"> Assinar o plano Premium </span>              | <span style="color:gold"> Usuário Bronze </span>                              |
+| <span style="color:cyan"> RF-009 </span> | <span style="color:greenyellow"> Participar de campeonatos </span>            | <span style="color:gold"> Usuário Bronze, Usuário Prata, Usuário Ouro </span> |
+| <span style="color:cyan"> RF-010 </span> | <span style="color:greenyellow"> Fazer logoff </span>                         | <span style="color:gold"> Usuário Bronze, Usuário Prata, Usuário Ouro </span> |
+| <span style="color:cyan"> RF-011 </span> | <span style="color:greenyellow"> Alterar dados da conta </span>               | <span style="color:gold"> Usuário Bronze, Usuário Prata, Usuário Ouro </span> |
+| <span style="color:cyan"> RF-012 </span> | <span style="color:greenyellow"> Participar de Premiações </span>             | <span style="color:gold"> Usuário Prata, Usuário Ouro </span>                 |
+| <span style="color:cyan"> RF-013 </span> | <span style="color:greenyellow"> Escalar até dois times </span>               | <span style="color:gold"> Usuário Prata </span>                               |
+| <span style="color:cyan"> RF-014 </span> | <span style="color:greenyellow"> Escalar até cinco times </span>              | <span style="color:gold"> Usuário Ouro </span>                                |
+| <span style="color:cyan"> RF-015 </span> | <span style="color:greenyellow"> Participar de campeonatos exclusivos </span> | <span style="color:gold"> Usuário Prata, Usuário Ouro </span>                 |
 
 [Voltar para a página inicial](./readme.md)
