@@ -2,31 +2,22 @@
 
 Requisitos funcionais referem-se as solicitações que o sistema deve atender através de funções.
 
-- Cadastrar administrador
-- Alterar notas do jogador
-- Incluir notas do jogador
-- Listar a pontuação dos jogadores
-- Adicionar jogadores
-- Excluir jogadores da partida
-- Fazer substituições dos jogadores
-- Mudar esquema tático do seu time
-- Adicionar nome do time
-- Excluir nome do time
-- Alterar nome do time
-- Assinar plataforma
-
-### Regra de pontuação (CRUD)
-
-- Campeonato (CRUD)
-- Jogador (CRUD)
-- Time (CRUD)
-- Premiação (CRUD)
-- Exibir quanto cada jogador pontuou no último jogo
-- Exibir qual a média de pontuação do jogador
-- Exibir quanto o jogador custa
-- Exibir a pontuação do Jogador
-- Mostrar preço do time
-- Mostrar saldo do jogo
+- | Identificador | Descrição Resumida                   | Ator(es)                                    |
+  | ------------- | ------------------------------------ | ------------------------------------------- |
+  | RF-001        | Fazer cadastro                       | Visitante                                   |
+  | RF-002        | Fazer login                          | Visitante                                   |
+  | RF-003        | Listar campeonatos                   | Todos                                       |
+  | RF-004        | Listar partidas atuais               | Todos                                       |
+  | RF-005        | Listar regras                        | Todos                                       |
+  | RF-006        | Configurar time                      | Usuário Bronze, Usuário Prata, Usuário Ouro |
+  | RF-007        | Assinar o plano Vip                  | Usuário Bronze                              |
+  | RF-008        | Assinar o plano Premium              | Usuário Bronze                              |
+  | RF-009        | Participar de campeonatos            | Usuário Bronze, Usuário Prata, Usuário Ouro |
+  | RF-010        | Fazer logoff                         | Usuário Bronze, Usuário Prata, Usuário Ouro |
+  | RF-011        | Alterar dados da conta               | Usuário Bronze, Usuário Prata, Usuário Ouro |
+  | RF-012        | Participar de Premiações             | Usuário Prata, Usuário Ouro                 |
+  | RF-013        | Escalar até dois times               | Usuário Prata                               |
+  | RF-014        | Escalar até cinco times              | Usuário Ouro                                |
+  | RF-015        | Participar de campeonatos exclusivos | Usuário Prata, Usuário Ouro                 |
 
 [Voltar para a página inicial](./readme.md)
-
