@@ -8,3 +8,4 @@ O Fantasy Game estilo Cartola FC te convida a mergulhar em um universo de **fute
 2. [👤 Usuários do Sistema](002-usuarios-do-sistema.md)
 3. [📗 Requisitos Funcionais](003-requisitos-funcionais.md)
 4. [📕 Requisitos Não Funcionais](004-requisitos-nao-funcionais.md)
+5. [📘 Regras de Negócio](005-regras-de-negocio.md)

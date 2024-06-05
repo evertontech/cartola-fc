@@ -2,7 +2,7 @@
 
 ### Visitante
 
-O **visitante** pode verificar as partidas, sistema de pontuação, partidas acontecendo. Poderá fazer um cadastro e login no cadastro.
+O **Visitante** pode verificar as partidas, sistema de pontuação, partidas acontecendo. Poderá fazer um cadastro e login no cadastro.
 
 ### Usuário Bronze
 
@@ -15,7 +15,7 @@ Poderá participar de campeonatos concorrendo a **prêmios** por melhor pontuaç
 
 ### Usuário Ouro
 
-**Usuário cadastrado com plano de assinatura premium** poderá fazer tudo o usuário vip faz, além de poder escalar dez times.
+**Usuário cadastrado com plano de assinatura premium** poderá fazer tudo o usuário vip faz, além de poder escalar cinco times.
 
 ### Administrador
 
