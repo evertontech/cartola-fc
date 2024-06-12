@@ -12,9 +12,16 @@ Table time {
 Table jogador {
   id integer [primary key]
   nome varchar
+  preco integer
   time_id integer
+  posicao_id integer
 }
 
-Ref: time.tecnico_id < tecnico.id
+Table posicao {
+  id integer [primary key]
+  nome varchar
+}
 
-Ref: jogador.time_id < time.id
+Ref: tecnico.id - time.tecnico_id
+Ref: time.id < jogador.time_id
+Ref: posicao.id < jogador.posicao_id
