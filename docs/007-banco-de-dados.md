@@ -24,13 +24,20 @@ Table posicao {
   nome varchar
 }
 
-Table confrontos {
+Table partida {
   id integer [primary key]
   data_hora datetime
   placar_casa integer
-  placar_fora integer
+  placar_visitante integer
   casa_clube_id integer
-  fora_clube_id integer
+  visitante_clube_id integer
+}
+
+Table escalacoes {
+  id integer [primary key]
+  usuario_id integer
+  jogador_id integer
+  isCapitao bool
 }
 
 Table usuario {
@@ -45,11 +52,14 @@ Table usuario {
   endereco varchar
   numero integer
   celular varchar
+  time_favorito varchar
   senha varchar
 }
 
 Ref: tecnico.id - clube.tecnico_id
 Ref: clube.id < jogador.clube_id
 Ref: posicao.id < jogador.posicao_id
-Ref: confrontos.casa_clube_id - clube.id
-Ref: confrontos.fora_clube_id - clube.id
+Ref: partida.casa_clube_id - clube.id
+Ref: partida.visitante_clube_id - clube.id
+Ref: escalacoes.usuario_id > usuario.id
+Ref: escalocoes.jogador_id > jogador.id
