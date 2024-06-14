@@ -1,8 +1,3 @@
-Table tecnico {
-  id integer [primary key]
-  nome varchar
-}
-
 Table clube {
   id integer [primary key]
   nome varchar
@@ -14,12 +9,17 @@ Table jogador {
   nome varchar
   preco integer
   pontuacao integer
-  disponivel bool
   clube_id integer
   posicao_id integer
+  vai_jogar bool
 }
 
 Table posicao {
+  id integer [primary key]
+  nome varchar
+}
+
+Table estilo_defensivo {
   id integer [primary key]
   nome varchar
 }
@@ -33,11 +33,29 @@ Table partida {
   visitante_clube_id integer
 }
 
-Table escalacoes {
+Table time_usuario {
   id integer [primary key]
   usuario_id integer
+  densidade integer
+  linha_defensiva integer
+  estilo_defensivo_id integer
+  esquema_tatico_id integer
+  escalacao_id integer
+}
+
+Table esquema_tatico {
+  id integer [primary key]
+  quantidade_zagueiros integer
+  quantidade_meias integer
+  quantidade_atacantes integer
+}
+
+Table escalacao {
+  id integer [primary key]
+  time_usuario_id integer
   jogador_id integer
-  isCapitao bool
+  is_capitao bool
+  is_titular bool
 }
 
 Table usuario {
@@ -56,10 +74,13 @@ Table usuario {
   senha varchar
 }
 
-Ref: tecnico.id - clube.tecnico_id
+
 Ref: clube.id < jogador.clube_id
 Ref: posicao.id < jogador.posicao_id
 Ref: partida.casa_clube_id - clube.id
 Ref: partida.visitante_clube_id - clube.id
-Ref: escalacoes.usuario_id > usuario.id
-Ref: escalocoes.jogador_id > jogador.id
+Ref: time_usuario.usuario_id > usuario.id
+Ref: time_usuario.estilo_defensivo_id > estilo_defensivo.id
+Ref: time_usuario.esquema_tatico_id > esquema_tatico.id
+Ref: time_usuario.escalacao_id < escalacao.id
+Ref: escalacao.jogador_id > jogador.id
