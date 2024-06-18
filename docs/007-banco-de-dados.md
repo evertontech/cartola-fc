@@ -75,12 +75,12 @@ Table usuario {
 Table cidade {
   id integer [primary key]
   nome varchar [not null]
-  estado_id integer
+  estado_id integer [not null]
 }
 
 Table estado {
   id integer [primary key]
-  sigla varchar [not null]
+  nome varchar [not null]
 }
 
 
@@ -98,3 +98,4 @@ Ref: usuario.clube_favorito_id > clube.id
 Ref: time_usuario.id < escalacao.time_usuario_id
 Ref: estado.id < cidade.estado_id
 Ref: usuario.cidade_id > cidade.id
+
