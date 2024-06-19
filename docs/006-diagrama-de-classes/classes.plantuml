@@ -1,3 +1,57 @@
 @startuml
 
+class Pais {
+    -Long id
+    -String nome
+    -Estado[] estados
+}
+
+class Estado {
+    -Long id
+    -String nome
+    -Cidade[] cidades
+}
+
+class Cidade {
+    -Long id
+    -String nome
+}
+
+class Idioma {
+    -Long id
+    -String nome
+    -String locale
+}
+
+class Endereco {
+    -Long id
+    -String zipCode
+    -String logradouro
+    -String numero
+    -String bairro
+    -Cidade cidade
+}
+
+class Usuario {
+    -Long id
+    -String nome
+    -String cpf
+    -Date dataNascimento
+    -String email
+    -String celular
+    -String senha
+    -Integer experiencia
+    -Integer pontuacao
+    -Idioma idiomaPreferido
+    -Endereco endereco
+    -Clube clubeFavorito
+}
+
+Pais *-- Estado
+Estado *-- Cidade
+Cidade *-- Endereco
+Idioma o-- Usuario
+Endereco *-- Usuario
+Clube o-- Usuario
+
 @enduml
