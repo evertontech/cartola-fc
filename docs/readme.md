@@ -4,8 +4,10 @@ O Fantasy Game estilo Cartola FC te convida a mergulhar em um universo de **fute
 
 ## Documentação
 
-1. [📈 Motivações](001-motivacoes.md)
-2. [👤 Usuários do Sistema](002-usuarios-do-sistema.md)
-3. [📗 Requisitos Funcionais](003-requisitos-funcionais.md)
-4. [📕 Requisitos Não Funcionais](004-requisitos-nao-funcionais.md)
-5. [📘 Regras de Negócio](005-regras-de-negocio.md)
+1. [📈 Motivações](001-motivacoes/readme.md)
+2. [👤 Usuários do Sistema](002-usuarios-do-sistema/readme.md)
+3. [📗 Requisitos Funcionais](003-requisitos-funcionais/readme.md)
+4. [📕 Requisitos Não Funcionais](004-requisitos-nao-funcionais/readme.md)
+5. [📘 Regras de Negócio](005-regras-de-negocio/readme.md)
+6. [🧩 Diagrama de classes](006-diagrama-de-classe/readme.md)
+7. [📊 Banco de dados](007-banco-de-dados/readme.md)
