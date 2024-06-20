@@ -4,23 +4,31 @@ class Pais {
     -Long id
     -String nome
     -Estado[] estados
+    +getters()
+    +setters()
 }
 
 class Estado {
     -Long id
     -String nome
     -Cidade[] cidades
+    +getters()
+    +setters()
 }
 
 class Cidade {
     -Long id
     -String nome
+    +getters()
+    +setters()
 }
 
 class Idioma {
     -Long id
     -String nome
     -String locale
+    +getters()
+    +setters()
 }
 
 class Endereco {
@@ -30,28 +38,143 @@ class Endereco {
     -String numero
     -String bairro
     -Cidade cidade
+    +getters()
+    +setters()
 }
 
 class Usuario {
     -Long id
     -String nome
     -String cpf
-    -Date dataNascimento
     -String email
     -String celular
+    -Date dataNascimento
     -String senha
     -Integer experiencia
     -Integer pontuacao
-    -Idioma idiomaPreferido
     -Endereco endereco
     -Clube clubeFavorito
+    -Idioma idiomaPreferido
+    -Escalacao[] escalacoes
+    +getters()
+    +setters()
+}
+
+class Clube {
+    -Long id
+    -String nome
+    -Jogador[] jogadores
+    +getters()
+    +setters()
+}
+
+class Partida {
+    -Long id
+    -LocalDateTime dataHoraInicio
+    -Integer placarCasa
+    -Integer placarVisitante
+    -Clube clubeCasa
+    -Clube clubeVisitante
+    -Campeonato campeonato
+    +getters()
+    +setters()
+}
+
+class Campeonato {
+    -Long id
+    -String nome
+    -Partida[] partidas
+    -Clube[] clubesParticipantes
+    +getters()
+    +setters()
+}
+
+class Jogador {
+    -Long id
+    -String nome
+    -Integer preco
+    -Boolean vaiJogar
+    -Integer pontuacao
+    -Posicao posicao
+    -Clube clubeAtual
+    +getters()
+    +setters()
+}
+
+class JogadorEscalado {
+    -Long id
+    -Boolean isCapitao
+    -Boolean isTitular
+    -Jogador jogador
+    -Escalacao escalacao
+    +getters()
+    +setters()
+}
+
+enum Posicao {
+    GOLEIRO
+    LATERAL
+    TECNICO
+    ZAGUEIRO
+    ATACANTE
+    MEIO_CAMPO
+    +String getDescricao()
+}
+
+class Escalacao {
+    -Long id
+    -Integer grauDeDensidade
+    -Integer alturaDaLinhaDefensiva
+    -Usuario usuario
+    -Campeonato campeonato
+    -EsquemaTatico esquemaTatico
+    -EstiloDefensivo estiloDefensivo
+    -JogadorEscalado[] jogadoresEscalados
+    +getters()
+    +setters()
+}
+
+enum EstiloDefensivo {
+    PADRAO
+    RETRANCA
+    AGRESSIVO
+    LINHA_ALTA
+    PRESSAO_ALTA
+    MARCACAO_POR_ZONA
+    MARCACAO_HOMEM_A_HOMEM
+    +String getDescricao()
+}
+
+enum EsquemaTatico {
+    _3_4_3_
+    _3_5_2_
+    _4_3_3_
+    _4_4_2_
+    _4_5_1_
+    _5_3_2_
+    _5_4_1_
+    +String getDescricao()
 }
 
 Pais *-- Estado
 Estado *-- Cidade
-Cidade *-- Endereco
-Idioma o-- Usuario
-Endereco *-- Usuario
-Clube o-- Usuario
+Endereco *-- Cidade
+
+Usuario o-- Clube
+Usuario o-- Idioma
+Usuario *-- Endereco
+
+Jogador o-o Clube
+Jogador o-- Posicao
+
+Escalacao o-* Usuario
+Escalacao o-- Campeonato
+Escalacao o-- EsquemaTatico
+Escalacao o-- EstiloDefensivo
+Escalacao *-* JogadorEscalado
+
+Partida *-- Clube
+Partida *-- Clube
+Partida *-- Campeonato
 
 @enduml
