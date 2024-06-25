@@ -2,23 +2,41 @@
 
 ### Visitante
 
-O **Visitante** pode verificar as partidas, sistema de pontuação, partidas acontecendo. Poderá fazer um cadastro e login no cadastro.
+- Verificar as partidas.
+- Visualizar rankings de campeonatos.
+- Partidas acontecendo.
+- Fazer cadastro e login.
+- Visualizar regras.
 
 ### Usuário Bronze
 
-**Usuário cadastrado sem plano de assinatura** e logado poderá jogar gratuitamente, escalar seu time, verificar partidas acontecendo. Além de tudo que o visitante pode fazer.
-Poderá participar de campeonatos concorrendo a **prêmios** por melhor pontuação. (Assinante)
+- Usuário cadastrado.
+- Plano de assinatura.
+- Escalar até 1 times.
+- Escalar até 1 jogadores por clube.
+- Participar de até 1 campeonatos.
+- Concorrer a prêmios.
 
 ### Usuário Prata
 
-**Usuário cadastrado com plano de assinatura vip** poderá fazer tudo que o usuário bronze faz além de opções personalizadas e concorrer a prêmios.
+- Usuário cadastrado.
+- Plano de assinatura vip.
+- Escalar até 2 times.
+- Escalar até 2 jogadores por clube.
+- Participar de até 2 campeonatos.
+- Concorrer a prêmios.
 
 ### Usuário Ouro
 
-**Usuário cadastrado com plano de assinatura premium** poderá fazer tudo o usuário vip faz, além de poder escalar cinco times.
+- Usuário cadastrado.
+- Plano de assinatura premium.
+- Escalar até 3 times.
+- Escalar até 2 jogadores por clube.
+- Participar de até 3 campeonatos.
+- Concorrer a prêmios.
 
 ### Administrador
 
-**Administrador** Uma conta que pode entrar e cadastrar jogador, time, liga, regras, títulos, premiação e alterar a pontuação dos jogadores da partida.
+- Cadastrar e administrar entidades do game.
 
 [Voltar para a página inicial](./readme.md)
