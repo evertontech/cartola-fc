@@ -11,11 +11,11 @@
 ### Usuário Bronze
 
 - Usuário cadastrado.
-- Plano de assinatura.
+- Sem plano de assinatura.
 - Escalar até 1 times.
 - Escalar até 1 jogadores por clube.
-- Participar de até 1 campeonatos.
-- Concorrer a prêmios.
+- Participar de todos campeonatos sem a possibilidade de concorrer a prêmios.
+- Não concorre a prêmios.
 
 ### Usuário Prata
 
@@ -23,7 +23,7 @@
 - Plano de assinatura vip.
 - Escalar até 2 times.
 - Escalar até 2 jogadores por clube.
-- Participar de até 2 campeonatos.
+- Moedas do jogo para participar de até 2 campeonatos com possibilidade de concorrer a prêmios.
 - Concorrer a prêmios.
 
 ### Usuário Ouro
@@ -32,7 +32,17 @@
 - Plano de assinatura premium.
 - Escalar até 3 times.
 - Escalar até 2 jogadores por clube.
-- Participar de até 3 campeonatos.
+- Moedas do jogo para participar de 3 campeonatos com possibilidade de concorrer a prêmios.
+- Concorrer a prêmios.
+
+### Usuário Diamante
+
+- Usuário cadastrado.
+- Plano de assinatura master.
+- Escalar até 5 times.
+- Escalar até 3 jogadores por clube.
+- Moedas do jogo para participar de todos campeonatos com possibilidade de concorrer a prêmios.
+- Concorrer a prêmios exclusivos.
 - Concorrer a prêmios.
 
 ### Administrador
